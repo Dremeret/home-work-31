@@ -18,7 +18,7 @@ const ContactsList = () => {
         <li key={contact.id}>
           <p>{contact.text}</p>
           <button onClick={() => dispatch(toggleFavourites(contact.id))}>
-            {contact.favourites ? '⭐' : '☆'}
+            {contact.favourites ? '✅' : '✔'}
           </button>
           <button onClick={() => dispatch(deleteContact(contact.id))}>
             Видалити
